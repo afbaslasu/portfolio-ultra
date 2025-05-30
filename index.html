@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultra Profile | Tailwind Edition</title>
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <!-- Isotope -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+  <!-- ImagesLoaded -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.4/imagesloaded.pkgd.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+  
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#eb5424',
+            dark: '#212227',
+            light: '#f8f8f8'
+          },
+          fontFamily: {
+            raleway: ['Raleway', 'sans-serif']
+          },
+          animation: {
+            'rotate-in-up-left': 'rotate-in-up-left 0.6s ease-out both'
+          },
+          keyframes: {
+            'rotate-in-up-left': {
+              '0%': {
+                transform: 'rotate(-90deg)',
+                'transform-origin': 'left bottom',
+                opacity: '0'
+              },
+              '100%': {
+                transform: 'rotate(0)',
+                'transform-origin': 'left bottom',
+                opacity: '1'
+              }
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-raleway bg-white" data-spy="scroll" data-target="#rock-navigation">
+  <!-- Navigation -->
+  <div class="sticky-navigation opacity-0 -top-20 fixed w-full z-50">
+    <div class="container mx-auto">
+      <nav class="bg-white shadow-md py-3 px-4">
+        <div class="flex justify-between items-center">
+          <a href="#" class="text-2xl font-bold text-dark">Ultra Profile</a>
+          <button class="md:hidden text-primary focus:outline-none" id="mobile-menu-button">
+            <i class="fas fa-bars text-2xl"></i>
+          </button>
+          <ul class="hidden md:flex space-x-6 uppercase font-bold text-sm tracking-wider" id="main-navigation">
+            <li><a href="#home" class="text-dark hover:text-primary smoothScroll">Home</a></li>
+            <li><a href="#work" class="text-dark hover:text-primary smoothScroll">My Work</a></li>
+            <li><a href="#portfolio" class="text-dark hover:text-primary smoothScroll">Portfolio</a></li>
+            <li><a href="#resume" class="text-dark hover:text-primary smoothScroll">Resume</a></li>
+            <li><a href="#about" class="text-dark hover:text-primary smoothScroll">About</a></li>
+            <li><a href="#contact" class="text-dark hover:text-primary smoothScroll">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <!-- Mobile Navigation -->
+      <div class="md:hidden hidden bg-white shadow-md" id="mobile-menu">
+        <ul class="py-4 px-6 space-y-4 uppercase font-bold text-sm tracking-wider">
+          <li><a href="#home" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">Home</a></li>
+          <li><a href="#work" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">My Work</a></li>
+          <li><a href="#portfolio" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">Portfolio</a></li>
+          <li><a href="#resume" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">Resume</a></li>
+          <li><a href="#about" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">About</a></li>
+          <li><a href="#contact" class="block text-dark hover:text-primary smoothScroll" onclick="closeMobileMenu()">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Home Section -->
+  <section id="home" class="min-h-screen flex items-center bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto px-4 text-center">
+      <div class="max-w-3xl mx-auto">
+        <h1 class="text-5xl md:text-6xl font-light text-white mb-4"><strong>John White</strong></h1>
+        <h2 class="text-2xl font-bold text-primary mb-8">Creative Director</h2>
+        <p class="text-lg text-gray-200 mb-8">I am a professional <strong class="text-white">UX Designer</strong> and <strong class="text-white">Front-End Developer</strong> creating modern and responsive designs for <strong class="text-white">Web</strong> and <strong class="text-white">Mobile</strong>. Let us work together. Thank you.</p>
+        <a href="#work" class="bg-primary hover:bg-white text-white hover:text-primary font-bold py-3 px-8 rounded transition duration-300 smoothScroll">Let's Begin</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work Section -->
+  <section id="work" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="mb-16">
+        <h2 class="text-5xl font-light text-center mb-4">My <strong>Work</strong></h2>
+      </div>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="work-wrapper border border-gray-400 rounded-lg text-center p-10 hover:border-primary">
+          <i class="fas fa-link text-gray-500 text-6xl mb-10"></i>
+          <h3 class="text-xl font-bold uppercase text-primary mb-4">Mobile UX</h3>
+          <hr class="w-20 mx-auto border-gray-300 mb-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+        </div>
+        
+        <div class="work-wrapper border border-gray-400 rounded-lg text-center p-10 hover:border-primary">
+          <i class="fas fa-bolt text-gray-500 text-6xl mb-10"></i>
+          <h3 class="text-xl font-bold uppercase text-primary mb-4">Web Design</h3>
+          <hr class="w-20 mx-auto border-gray-300 mb-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+        </div>
+        
+        <div class="work-wrapper border border-gray-400 rounded-lg text-center p-10 hover:border-primary">
+          <i class="fas fa-tachometer-alt text-gray-500 text-6xl mb-10"></i>
+          <h3 class="text-xl font-bold uppercase text-primary mb-4">HTML Templates</h3>
+          <hr class="w-20 mx-auto border-gray-300 mb-6">
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="py-20 bg-light">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-light text-center mb-16">My <strong>Portfolio</strong></h2>
+      
+      <!-- Portfolio Filters -->
+      <div class="flex justify-center flex-wrap gap-2 mb-12">
+        <button class="filter-button bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark" data-filter="*">All</button>
+        <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".html">HTML</button>
+        <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".photoshop">Photoshop</button>
+        <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".wordpress">Wordpress</button>
+        <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".mobile">Mobile</button>
+      </div>
+      
+      <!-- Portfolio Grid -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 portfolio-container">
+        <!-- Portfolio Item 1 -->
+        <div class="portfolio-item html photoshop wordpress mobile">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 2 -->
+        <div class="portfolio-item html wordpress mobile">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 3 -->
+        <div class="portfolio-item wordpress">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 4 -->
+        <div class="portfolio-item html mobile">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551650975-87deedd944c3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 5 -->
+        <div class="portfolio-item wordpress">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 6 -->
+        <div class="portfolio-item html photoshop">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 7 -->
+        <div class="portfolio-item photoshop">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1542744095-291d1f67b221?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Portfolio Item 8 -->
+        <div class="portfolio-item wordpress">
+          <div class="portfolio-thumb relative overflow-hidden">
+            <img src="https://images.unsplash.com/photo-1467232004584-a241de8bcf5d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Portfolio" class="w-full h-64 object-cover">
+            <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white">
+              <h3 class="text-xl font-bold mb-2">UX Design</h3>
+              <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-20">
+    <div class="container mx-auto px-4">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+        <div>
+          <h2 class="text-5xl font-light mb-8">My <strong>Profile</strong></h2>
+          <div class="space-y-4">
+            <p><span class="font-bold inline-block w-24">Name</span> John White</p>
+            <p><span class="font-bold inline-block w-24">Birthday</span> December 24, 1996</p>
+            <p><span class="font-bold inline-block w-24">Address</span> Melbourne Victoria 3000 Australia</p>
+            <p><span class="font-bold inline-block w-24">Phone</span> +001 020 0340 | 009 080 0760</p>
+            <p><span class="font-bold inline-block w-24">Email</span> hello@company.com</p>
+            <p><span class="font-bold inline-block w-24">Website</span> <a href="#" class="text-primary">www.company.com</a></p>
+          </div>
+        </div>
+        
+        <div>
+          <h2 class="text-5xl font-light mb-8"><strong>Some</strong> Skills</h2>
+          <p class="mb-8">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+          
+          <div class="space-y-6">
+            <div>
+              <div class="flex justify-between mb-2">
+                <h4 class="font-bold uppercase text-sm">Bootstrap</h4>
+                <span class="text-sm">100%</span>
+              </div>
+              <div class="w-full bg-gray-200 h-1 rounded">
+                <div class="bg-primary h-1 rounded" style="width: 100%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <h4 class="font-bold uppercase text-sm">HTML5</h4>
+                <span class="text-sm">90%</span>
+              </div>
+              <div class="w-full bg-gray-200 h-1 rounded">
+                <div class="bg-primary h-1 rounded" style="width: 90%"></div>
+              </div>
+            </div>
+            
+            <div>
+              <div class="flex justify-between mb-2">
+                <h4 class="font-bold uppercase text-sm">SEO</h4>
+                <span class="text-sm">80%</span>
+              </div>
+              <div class="w-full bg-gray-200 h-1 rounded">
+                <div class="bg-primary h-1 rounded" style="width: 80%"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-32 bg-cover bg-center bg-fixed" style="background-image: url('https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1950&q=80');">
+    <div class="container mx-auto px-4">
+      <div class="max-w-2xl ml-auto">
+        <div class="text-right">
+          <h2 class="text-5xl font-light text-white mb-4">This is <strong>me</strong></h2>
+          <h1 class="text-4xl font-bold text-primary mb-8">Creative <strong>Director</strong></h1>
+          <p class="text-gray-200 mb-6">This is free Bootstrap v3.3.4 mobile friendly layout from <a href="https://templatemo.com" class="text-primary">templatemo</a>. Feel free to use it for your website. Credit goes to <a href="https://pixabay.com" class="text-primary">Pixabay</a> for photos used in this template. Dolore magna aliquam erat volutpat. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.</p>
+          <p class="text-gray-200">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam erat volutpat.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Social Section -->
+  <section id="social" class="py-0">
+    <div class="grid grid-cols-1 md:grid-cols-3">
+      <a href="#" class="social-link bg-blue-700 hover:bg-blue-800">
+        <div class="flex items-center p-12">
+          <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-6">
+            <i class="fab fa-facebook-f text-gray-600 text-2xl"></i>
+          </div>
+          <div class="text-white">
+            <h4 class="text-sm font-bold">Follow me on</h4>
+            <h3 class="text-xl font-bold">Social Facebook</h3>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="social-link bg-blue-400 hover:bg-blue-500">
+        <div class="flex items-center p-12">
+          <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-6">
+            <i class="fab fa-twitter text-gray-600 text-2xl"></i>
+          </div>
+          <div class="text-white">
+            <h4 class="text-sm font-bold">Tweet me on</h4>
+            <h3 class="text-xl font-bold">Social Twitter</h3>
+          </div>
+        </div>
+      </a>
+      
+      <a href="#" class="social-link bg-red-600 hover:bg-red-700">
+        <div class="flex items-center p-12">
+          <div class="bg-white rounded-full w-16 h-16 flex items-center justify-center mr-6">
+            <i class="fab fa-pinterest-p text-gray-600 text-2xl"></i>
+          </div>
+          <div class="text-white">
+            <h4 class="text-sm font-bold">Pin me on</h4>
+            <h3 class="text-xl font-bold">Social Pinterest</h3>
+          </div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20">
+    <div class="container mx-auto px-4">
+      <h2 class="text-5xl font-light text-center mb-4">Drop <strong>me a line</strong></h2>
+      <hr class="w-20 mx-auto border-gray-300 mb-16">
+      
+      <form class="max-w-4xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+          <input type="text" placeholder="Your Name" class="form-control w-full p-4 border border-gray-400 rounded">
+          <input type="email" placeholder="Your Email" class="form-control w-full p-4 border border-gray-400 rounded">
+        </div>
+        <input type="text" placeholder="Your Subject" class="form-control w-full p-4 border border-gray-400 rounded mb-6">
+        <textarea placeholder="Your Message" rows="6" class="form-control w-full p-4 border border-gray-400 rounded mb-8"></textarea>
+        <div class="text-center">
+          <button type="submit" class="bg-primary hover:bg-primary-dark text-white font-bold py-4 px-12 rounded uppercase">Shoot Message</button>
+        </div>
+      </form>
+      
+      <div class="text-center mt-16">
+        <p>Copyright &copy; 2023 Ultra Profile | design: <a href="https://templatemo.com" class="text-primary">smilelink</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Custom JavaScript -->
+  <script src="script.js"></script>
+</body>
+</html>
