@@ -1,0 +1,51 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  color: #606060;
+}
+
+.sticky-navigation {
+  transition: all 0.3s ease;
+}
+
+.portfolio-overlay {
+  transition: all 0.4s ease-in-out;
+  opacity: 0;
+}
+
+.portfolio-thumb:hover .portfolio-overlay {
+  opacity: 0.8;
+}
+
+.work-wrapper {
+  transition: all 0.6s ease-in;
+}
+
+.form-control {
+  transition: all 0.6s ease-in;
+}
+
+.form-control:focus, 
+.form-control:hover {
+  background: #202020;
+  color: #ffffff;
+}
+
+.social-link:hover {
+  background: #202020;
+}
+
+/* Additional styles for active navigation */
+.current {
+  color: #eb5424;
+}
+
+/* Mobile menu animation */
+#mobile-menu {
+  transition: all 0.3s ease;
+  max-height: 0;
+  overflow: hidden;
+}
+
+#mobile-menu.block {
+  max-height: 500px;
+}
