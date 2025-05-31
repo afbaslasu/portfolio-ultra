@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>afbas_ibas CV | Profile</title>
+    <title>Ibadehin CV | RESUME</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Font Awesome -->
@@ -65,66 +65,110 @@
     data-target="#rock-navigation"
   >
     <!-- Navigation -->
-    <div class="sticky-navigation opacity-0 -top-20 fixed w-full z-50">
+    <!-- Navigation -->
+    <div class="sticky-navigation opacity-0 -top-20 fixed w-full bg-white shadow-md z-50">
       <div class="container mx-auto">
-        <nav class="bg-white shadow-md py-3 px-4">
+        <nav class=" py-3 px-4">
           <div class="flex justify-between items-center">
             <a href="#" class="text-2xl font-bold text-dark">Ultra Profile</a>
-            <button
-              class="md:hidden text-primary focus:outline-none"
-              id="mobile-menu-button"
-            >
-              <i class="fas fa-bars text-2xl"></i>
-            </button>
-            <ul
-              class="hidden md:flex space-x-6 uppercase font-bold text-sm tracking-wider"
-              id="main-navigation"
-            >
-              <li>
-                <a
-                  href="#home"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >Home</a
+
+            <div class="flex items-center">
+              <!-- Main Navigation -->
+              <ul
+                class="hidden md:flex space-x-6 uppercase font-bold text-sm tracking-wider"
+                id="main-navigation"
+              >
+                <li>
+                  <a
+                    href="#home"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#work"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >My Work</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#portfolio"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >Portfolio</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#resume"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >Resume</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >About</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    class="text-dark hover:text-primary smoothScroll"
+                    >Contact</a
+                  >
+                </li>
+
+                <!-- Social Media Links - Hidden between 761px and 1032px -->
+                <li
+                  class="hidden lg:flex items-center pl-6 ml-6 border-l border-gray-200"
                 >
-              </li>
-              <li>
-                <a
-                  href="#work"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >My Work</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#portfolio"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >Portfolio</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#resume"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >Resume</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#about"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >About</a
-                >
-              </li>
-              <li>
-                <a
-                  href="#contact"
-                  class="text-dark hover:text-primary smoothScroll"
-                  >Contact</a
-                >
-              </li>
-            </ul>
+                  <div class="flex space-x-4">
+                    <a
+                      href="https://facebook.com"
+                      target="_blank"
+                      class="text-dark hover:text-primary text-lg"
+                    >
+                      <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a
+                      href="https://twitter.com"
+                      target="_blank"
+                      class="text-dark hover:text-primary text-lg"
+                    >
+                      <i class="fab fa-twitter"></i>
+                    </a>
+                    <a
+                      href="https://youtube.com"
+                      target="_blank"
+                      class="text-dark hover:text-primary text-lg"
+                    >
+                      <i class="fab fa-youtube"></i>
+                    </a>
+                    <a
+                      href="https://linkedin.com"
+                      target="_blank"
+                      class="text-dark hover:text-primary text-lg"
+                    >
+                      <i class="fab fa-linkedin-in"></i>
+                    </a>
+                  </div>
+                </li>
+              </ul>
+
+              <!-- Mobile Menu Button -->
+              <button
+                class="md:hidden text-primary focus:outline-none"
+                id="mobile-menu-button"
+              >
+                <i class="fas fa-bars text-2xl"></i>
+              </button>
+            </div>
           </div>
         </nav>
+
         <!-- Mobile Navigation -->
         <div class="md:hidden hidden bg-white shadow-md" id="mobile-menu">
           <ul
@@ -177,6 +221,40 @@
                 onclick="closeMobileMenu()"
                 >Contact</a
               >
+            </li>
+
+            <!-- Social Media Links for Mobile -->
+            <li class="pt-4 border-t border-gray-200">
+              <div class="flex space-x-6 justify-center">
+                <a
+                  href="https://facebook.com"
+                  target="_blank"
+                  class="text-dark hover:text-primary text-xl"
+                >
+                  <i class="fab fa-facebook-f"></i>
+                </a>
+                <a
+                  href="https://twitter.com"
+                  target="_blank"
+                  class="text-dark hover:text-primary text-xl"
+                >
+                  <i class="fab fa-twitter"></i>
+                </a>
+                <a
+                  href="https://youtube.com"
+                  target="_blank"
+                  class="text-dark hover:text-primary text-xl"
+                >
+                  <i class="fab fa-youtube"></i>
+                </a>
+                <a
+                  href="https://linkedin.com"
+                  target="_blank"
+                  class="text-dark hover:text-primary text-xl"
+                >
+                  <i class="fab fa-linkedin-in"></i>
+                </a>
+              </div>
             </li>
           </ul>
         </div>
