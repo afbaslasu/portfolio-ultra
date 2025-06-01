@@ -499,85 +499,124 @@
 
 
     <!-- Resume Section -->
-    <section id="resume" class="py-20">
-      <div class="container mx-auto px-4">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<section id="resume" class="pt-10 pb-20 bg-gray-50">
+  <div class="container mx-auto px-4 max-w-6xl">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+      <!-- Profile Column -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h2 class="text-4xl lg:text-5xl font-light mb-8">
+          My <strong class="font-bold text-primary">Profile</strong>
+        </h2>
+        
+        <div class="space-y-5">
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Name</span>
+            <span class="text-gray-800">John White</span>
+          </div>
+          
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Birthday</span>
+            <span class="text-gray-800">December 24, 1996</span>
+          </div>
+          
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Address</span>
+            <span class="text-gray-800">Melbourne VIC 3000, Australia</span>
+          </div>
+          
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Phone</span>
+            <span class="text-gray-800">+61 400 123 456</span>
+          </div>
+          
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Email</span>
+            <a href="mailto:hello@company.com" class="text-primary hover:underline">hello@company.com</a>
+          </div>
+          
+          <div class="flex items-start">
+            <span class="font-semibold text-gray-700 w-28 flex-shrink-0">Website</span>
+            <a href="#" target="_blank" class="text-primary hover:underline">www.company.com</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Skills Column -->
+      <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h2 class="text-4xl lg:text-5xl font-light mb-8">
+          <strong class="font-bold text-primary">Technical</strong> Skills
+        </h2>
+        
+        <p class="mb-8 text-gray-600 leading-relaxed">
+          With 5+ years of experience in web development, I've mastered various technologies 
+          to build responsive, accessible, and performant web applications.
+        </p>
+
+        <div class="space-y-7">
+          <!-- Skill Item -->
           <div>
-            <h2 class="text-5xl font-light mb-8">
-              My <strong>Profile</strong>
-            </h2>
-            <div class="space-y-4">
-              <p>
-                <span class="font-bold inline-block w-24">Name</span> John White
-              </p>
-              <p>
-                <span class="font-bold inline-block w-24">Birthday</span>
-                December 24, 1996
-              </p>
-              <p>
-                <span class="font-bold inline-block w-24">Address</span>
-                Melbourne Victoria 3000 Australia
-              </p>
-              <p>
-                <span class="font-bold inline-block w-24">Phone</span> +001 020
-                0340 | 009 080 0760
-              </p>
-              <p>
-                <span class="font-bold inline-block w-24">Email</span>
-                hello@company.com
-              </p>
-              <p>
-                <span class="font-bold inline-block w-24">Website</span>
-                <a href="#" class="text-primary">www.company.com</a>
-              </p>
+            <div class="flex justify-between mb-2">
+              <h4 class="font-bold uppercase text-sm tracking-wider text-gray-700">Bootstrap</h4>
+              <span class="text-sm font-medium text-primary">100%</span>
+            </div>
+            <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+              <div 
+                class="bg-gradient-to-r from-primary to-primary-dark h-2 rounded-full" 
+                style="width: 100%"
+                data-skill-percent="100">
+              </div>
             </div>
           </div>
 
+          <!-- Skill Item -->
           <div>
-            <h2 class="text-5xl font-light mb-8">
-              <strong>Some</strong> Skills
-            </h2>
-            <p class="mb-8">
-              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
-              nonummy nibh euismod tincidunt ut laoreet. Dolore magna aliquam
-              erat volutpat.
-            </p>
-
-            <div class="space-y-6">
-              <div>
-                <div class="flex justify-between mb-2">
-                  <h4 class="font-bold uppercase text-sm">Bootstrap</h4>
-                  <span class="text-sm">100%</span>
-                </div>
-                <div class="w-full bg-gray-200 h-1 rounded">
-                  <div class="bg-primary h-1 rounded" style="width: 100%"></div>
-                </div>
+            <div class="flex justify-between mb-2">
+              <h4 class="font-bold uppercase text-sm tracking-wider text-gray-700">HTML5/CSS3</h4>
+              <span class="text-sm font-medium text-primary">95%</span>
+            </div>
+            <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+              <div 
+                class="bg-gradient-to-r from-primary to-primary-dark h-2 rounded-full" 
+                style="width: 95%"
+                data-skill-percent="95">
               </div>
+            </div>
+          </div>
 
-              <div>
-                <div class="flex justify-between mb-2">
-                  <h4 class="font-bold uppercase text-sm">HTML5</h4>
-                  <span class="text-sm">90%</span>
-                </div>
-                <div class="w-full bg-gray-200 h-1 rounded">
-                  <div class="bg-primary h-1 rounded" style="width: 90%"></div>
-                </div>
+          <!-- Skill Item -->
+          <div>
+            <div class="flex justify-between mb-2">
+              <h4 class="font-bold uppercase text-sm tracking-wider text-gray-700">JavaScript</h4>
+              <span class="text-sm font-medium text-primary">90%</span>
+            </div>
+            <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+              <div 
+                class="bg-gradient-to-r from-primary to-primary-dark h-2 rounded-full" 
+                style="width: 90%"
+                data-skill-percent="90">
               </div>
+            </div>
+          </div>
 
-              <div>
-                <div class="flex justify-between mb-2">
-                  <h4 class="font-bold uppercase text-sm">SEO</h4>
-                  <span class="text-sm">80%</span>
-                </div>
-                <div class="w-full bg-gray-200 h-1 rounded">
-                  <div class="bg-primary h-1 rounded" style="width: 80%"></div>
-                </div>
+          <!-- Skill Item -->
+          <div>
+            <div class="flex justify-between mb-2">
+              <h4 class="font-bold uppercase text-sm tracking-wider text-gray-700">React</h4>
+              <span class="text-sm font-medium text-primary">85%</span>
+            </div>
+            <div class="w-full bg-gray-200 h-2 rounded-full overflow-hidden">
+              <div 
+                class="bg-gradient-to-r from-primary to-primary-dark h-2 rounded-full" 
+                style="width: 85%"
+                data-skill-percent="85">
               </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
 
     <!-- About Section -->
     <section
