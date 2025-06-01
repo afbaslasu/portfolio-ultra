@@ -31,26 +31,32 @@ window.addEventListener("scroll", mainNav);
 document.addEventListener("DOMContentLoaded", function () {
   mainNav();
 
-  // Initialize Isotope
-  const $portfolioContainer = $(".portfolio-container").isotope({
-    itemSelector: ".portfolio-item",
-    layoutMode: "fitRows",
-  });
+  $(document).ready(function () {
+    const $portfolioContainer = $(".portfolio-container");
 
-  // Filter items on button click
-  $(".filter-button").on("click", function () {
-    const filterValue = $(this).attr("data-filter");
-    $portfolioContainer.isotope({ filter: filterValue });
+    $portfolioContainer.imagesLoaded(function () {
+      $portfolioContainer.isotope({
+        itemSelector: ".portfolio-item",
+        layoutMode: "masonry",
+        percentPosition: true,
+      });
 
-    // Update active class
-    $(".filter-button").removeClass(
-      "bg-primary text-white hover:bg-primary-dark"
-    );
-    $(".filter-button").addClass(
-      "bg-gray-300 hover:bg-primary hover:text-white"
-    );
-    $(this).removeClass("bg-gray-300 hover:bg-primary hover:text-white");
-    $(this).addClass("bg-primary text-white hover:bg-primary-dark");
+      // Filter items on button click
+      $(".filter-button").on("click", function () {
+        const filterValue = $(this).attr("data-filter");
+        $portfolioContainer.isotope({ filter: filterValue });
+
+        // Update active class
+        $(".filter-button").removeClass(
+          "bg-primary text-white hover:bg-primary-dark"
+        );
+        $(".filter-button").addClass(
+          "bg-gray-300 hover:bg-primary hover:text-white"
+        );
+        $(this).removeClass("bg-gray-300 hover:bg-primary hover:text-white");
+        $(this).addClass("bg-primary text-white hover:bg-primary-dark");
+      });
+    });
   });
 
   // Smooth scrolling

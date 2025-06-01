@@ -356,244 +356,147 @@
     </section>
 
     <!-- Portfolio Section -->
-    <!-- Portfolio Section -->
-    <section id="portfolio" class="py-20 bg-light">
-      <div class="container mx-auto px-4">
-        <h2 class="text-5xl font-light text-center mb-16">
-          My <strong>Portfolio</strong>
-        </h2>
+<section id="portfolio" class="py-20 bg-light">
+  <div class="container mx-auto px-4">
+    <h2 class="text-5xl font-light text-center mb-16">
+      My <strong>Portfolio</strong>
+    </h2>
 
-        <!-- Portfolio Filters -->
-        <div class="flex justify-center flex-wrap gap-2 mb-12">
-          <!-- Filter buttons unchanged -->
-        </div>
+    <!-- Portfolio Filters -->
+    <div class="flex justify-center flex-wrap gap-2 mb-12">
+      <button class="filter-button bg-primary text-white px-4 py-2 rounded hover:bg-primary-dark" data-filter="*">All</button>
+      <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".html">HTML</button>
+      <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".photoshop">Photoshop</button>
+      <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".wordpress">Wordpress</button>
+      <button class="filter-button bg-gray-300 hover:bg-primary hover:text-white px-4 py-2 rounded" data-filter=".mobile">Mobile</button>
+    </div>
 
-        <!-- Portfolio Grid - Fixed with proper item sizing -->
-        <div
-          class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 w-full"
-        >
-          <!-- Portfolio Item 1 -->
-          <div class="portfolio-item html photoshop wordpress mobile">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-dev-526.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 2 -->
-          <div class="portfolio-item html wordpress mobile">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-dev-680.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 3 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-dev-915.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 4 -->
-          <div class="portfolio-item html mobile">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-dev-art-420.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 5 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-1.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 6 -->
-          <div class="portfolio-item html photoshop">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-2.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 7 -->
-          <div class="portfolio-item photoshop">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-3.png"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 8 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-4.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 9 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-5.png"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 10 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-6.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <!-- Portfolio Item 11 -->
-          <div class="portfolio-item wordpress">
-            <div class="portfolio-thumb relative overflow-hidden aspect-square">
-              <img
-                src="./images/web-developer-md.jpg"
-                alt="Portfolio"
-                class="w-full h-full object-cover"
-              />
-              <div
-                class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300"
-              >
-                <h3 class="text-xl font-bold mb-2">UX Design</h3>
-                <p>
-                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed
-                  diam nonumm.
-                </p>
-              </div>
-            </div>
+    <!-- Portfolio Grid -->
+    <div class="portfolio-container flex flex-wrap -mx-3">
+      <!-- Item 1 -->
+      <div class="portfolio-item html photoshop wordpress mobile w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-dev-526.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
           </div>
         </div>
       </div>
-    </section>
+
+      <!-- Item 2 -->
+      <div class="portfolio-item html wordpress mobile w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-dev-680.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 3 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-dev-915.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 4 -->
+      <div class="portfolio-item html mobile w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-dev-art-420.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 5 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-1.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 6 -->
+      <div class="portfolio-item html photoshop w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-2.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 7 -->
+      <div class="portfolio-item photoshop w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-3.png" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 8 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-4.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 9 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-5.png" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 10 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-6.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Item 11 -->
+      <div class="portfolio-item wordpress w-full sm:w-1/2 md:w-1/3 lg:w-1/4 px-3 mb-6">
+        <div class="portfolio-thumb relative overflow-hidden aspect-square">
+          <img src="./images/web-developer-md.jpg" alt="Portfolio" class="w-full h-full object-cover" />
+          <div class="portfolio-overlay absolute inset-0 bg-primary flex flex-col justify-center items-center text-center p-4 text-white opacity-0 hover:opacity-90 transition-opacity duration-300">
+            <h3 class="text-xl font-bold mb-2">UX Design</h3>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonumm.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
     <!-- Resume Section -->
     <section id="resume" class="py-20">
@@ -676,7 +579,6 @@
       </div>
     </section>
 
-    <!-- About Section -->
     <!-- About Section -->
     <section
       id="about"
